@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/HellRain.dir/actions.cpp.obj.d"
   "CMakeFiles/HellRain.dir/deathaction.cpp.obj"
   "CMakeFiles/HellRain.dir/deathaction.cpp.obj.d"
+  "CMakeFiles/HellRain.dir/items.cpp.obj"
+  "CMakeFiles/HellRain.dir/items.cpp.obj.d"
   "CMakeFiles/HellRain.dir/main.cpp.obj"
   "CMakeFiles/HellRain.dir/main.cpp.obj.d"
   "HellRain.exe"

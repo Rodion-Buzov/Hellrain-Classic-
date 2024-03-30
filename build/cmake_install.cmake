@@ -1,4 +1,4 @@
-# Install script for directory: D:/C++ Programs/Console Projects/Hellrain!Copy
+# Install script for directory: D:/C++ Programs/Console Projects/Hellrain!
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/C++ Programs/Console Projects/Hellrain!Copy/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/C++ Programs/Console Projects/Hellrain!/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -1,6 +1,6 @@
-CMakeFiles/HellRain.dir/variables.cpp.obj: \
- D:/C++\ Programs/Console\ Projects/Hellrain!Copy/variables.cpp \
- D:/C++\ Programs/Console\ Projects/Hellrain!Copy/heading.hpp \
+CMakeFiles/HellRain.dir/items.cpp.obj: \
+ D:/C++\ Programs/Console\ Projects/Hellrain!/items.cpp \
+ D:/C++\ Programs/Console\ Projects/Hellrain!/heading.hpp \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/iostream \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/requires_hosted.h \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \

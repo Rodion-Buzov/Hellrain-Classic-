@@ -52,11 +52,18 @@ public:
     int TowerHealth = 3000; // Tower health
     int TowerDamage = 100;   // Damage per hit
 
+    unsigned int NumOfBombs = 3;
+
     // TowerDeath function: A function that gets called when the tower's health reaches 0 or below.
     void death() override {
         cout << "Tower has been destroyed!" << endl;
         cout << "Your win! Congratulations!" << endl;
     }
+};
+
+class Potions {
+public:
+    unsigned int NumsOfPotions = 4; // Number of potions in inventory
 };
 
 void WarriorAction(Tower& tower, Warrior& warrior, Wizard& wizard, Healer& healer);
@@ -68,3 +75,6 @@ void WarriorDeathStep(Tower& tower, Warrior& warrior, Wizard& wizard, Healer& he
 void WizardDeathStep(Tower& tower, Warrior& warrior, Wizard& wizard, Healer& healer);
 void HealerDeathStep(Tower& tower, Warrior& warrior, Wizard& wizard, Healer& healer);
 void TowerDeathStep(Tower& tower, Warrior& warrior, Wizard& wizard, Healer& healer);
+
+void HealthPotion(Potions& potion, Warrior& warrior, Wizard& wizard, Healer& healer);
+void Bomb(Tower& tower);

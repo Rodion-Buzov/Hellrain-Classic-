@@ -1,20 +1,26 @@
 [
 {
-  "directory": "D:/C++ Programs/Console Projects/Hellrain!Copy/build",
-  "command": "C:/w64devkit/bin/g++.exe   -g -o CMakeFiles/HellRain.dir/main.cpp.obj -c \"D:/C++ Programs/Console Projects/Hellrain!Copy/main.cpp\"",
-  "file": "D:/C++ Programs/Console Projects/Hellrain!Copy/main.cpp",
+  "directory": "D:/C++ Programs/Console Projects/Hellrain!/build",
+  "command": "C:/w64devkit/bin/g++.exe   -g -o CMakeFiles/HellRain.dir/main.cpp.obj -c \"D:/C++ Programs/Console Projects/Hellrain!/main.cpp\"",
+  "file": "D:/C++ Programs/Console Projects/Hellrain!/main.cpp",
   "output": "CMakeFiles/HellRain.dir/main.cpp.obj"
 },
 {
-  "directory": "D:/C++ Programs/Console Projects/Hellrain!Copy/build",
-  "command": "C:/w64devkit/bin/g++.exe   -g -o CMakeFiles/HellRain.dir/actions.cpp.obj -c \"D:/C++ Programs/Console Projects/Hellrain!Copy/actions.cpp\"",
-  "file": "D:/C++ Programs/Console Projects/Hellrain!Copy/actions.cpp",
+  "directory": "D:/C++ Programs/Console Projects/Hellrain!/build",
+  "command": "C:/w64devkit/bin/g++.exe   -g -o CMakeFiles/HellRain.dir/actions.cpp.obj -c \"D:/C++ Programs/Console Projects/Hellrain!/actions.cpp\"",
+  "file": "D:/C++ Programs/Console Projects/Hellrain!/actions.cpp",
   "output": "CMakeFiles/HellRain.dir/actions.cpp.obj"
 },
 {
-  "directory": "D:/C++ Programs/Console Projects/Hellrain!Copy/build",
-  "command": "C:/w64devkit/bin/g++.exe   -g -o CMakeFiles/HellRain.dir/deathaction.cpp.obj -c \"D:/C++ Programs/Console Projects/Hellrain!Copy/deathaction.cpp\"",
-  "file": "D:/C++ Programs/Console Projects/Hellrain!Copy/deathaction.cpp",
+  "directory": "D:/C++ Programs/Console Projects/Hellrain!/build",
+  "command": "C:/w64devkit/bin/g++.exe   -g -o CMakeFiles/HellRain.dir/deathaction.cpp.obj -c \"D:/C++ Programs/Console Projects/Hellrain!/deathaction.cpp\"",
+  "file": "D:/C++ Programs/Console Projects/Hellrain!/deathaction.cpp",
   "output": "CMakeFiles/HellRain.dir/deathaction.cpp.obj"
+},
+{
+  "directory": "D:/C++ Programs/Console Projects/Hellrain!/build",
+  "command": "C:/w64devkit/bin/g++.exe   -g -o CMakeFiles/HellRain.dir/items.cpp.obj -c \"D:/C++ Programs/Console Projects/Hellrain!/items.cpp\"",
+  "file": "D:/C++ Programs/Console Projects/Hellrain!/items.cpp",
+  "output": "CMakeFiles/HellRain.dir/items.cpp.obj"
 }
 ]

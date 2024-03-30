@@ -57,10 +57,10 @@ RM = "C:/Program Files/CMake/bin/cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "D:/C++ Programs/Console Projects/Hellrain!Copy"
+CMAKE_SOURCE_DIR = "D:/C++ Programs/Console Projects/Hellrain!"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "D:/C++ Programs/Console Projects/Hellrain!Copy/build"
+CMAKE_BINARY_DIR = "D:/C++ Programs/Console Projects/Hellrain!/build"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool for source..."
-	"C:/Program Files/CMake/bin/cpack.exe" --config ./CPackSourceConfig.cmake "D:/C++ Programs/Console Projects/Hellrain!Copy/build/CPackSourceConfig.cmake"
+	"C:/Program Files/CMake/bin/cpack.exe" --config ./CPackSourceConfig.cmake "D:/C++ Programs/Console Projects/Hellrain!/build/CPackSourceConfig.cmake"
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -107,9 +107,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "D:/C++ Programs/Console Projects/Hellrain!Copy/build/CMakeFiles" "D:/C++ Programs/Console Projects/Hellrain!Copy/build//CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "D:/C++ Programs/Console Projects/Hellrain!/build/CMakeFiles" "D:/C++ Programs/Console Projects/Hellrain!/build//CMakeFiles/progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "D:/C++ Programs/Console Projects/Hellrain!Copy/build/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "D:/C++ Programs/Console Projects/Hellrain!/build/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -197,6 +197,30 @@ deathaction.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HellRain.dir/build.make CMakeFiles/HellRain.dir/deathaction.cpp.s
 .PHONY : deathaction.cpp.s
 
+items.obj: items.cpp.obj
+.PHONY : items.obj
+
+# target to build an object file
+items.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HellRain.dir/build.make CMakeFiles/HellRain.dir/items.cpp.obj
+.PHONY : items.cpp.obj
+
+items.i: items.cpp.i
+.PHONY : items.i
+
+# target to preprocess a source file
+items.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HellRain.dir/build.make CMakeFiles/HellRain.dir/items.cpp.i
+.PHONY : items.cpp.i
+
+items.s: items.cpp.s
+.PHONY : items.s
+
+# target to generate assembly for a file
+items.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HellRain.dir/build.make CMakeFiles/HellRain.dir/items.cpp.s
+.PHONY : items.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -238,6 +262,9 @@ help:
 	@echo "... deathaction.obj"
 	@echo "... deathaction.i"
 	@echo "... deathaction.s"
+	@echo "... items.obj"
+	@echo "... items.i"
+	@echo "... items.s"
 	@echo "... main.obj"
 	@echo "... main.i"
 	@echo "... main.s"

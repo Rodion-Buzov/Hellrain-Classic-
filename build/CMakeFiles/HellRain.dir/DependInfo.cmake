@@ -8,9 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "D:/C++ Programs/Console Projects/Hellrain!Copy/actions.cpp" "CMakeFiles/HellRain.dir/actions.cpp.obj" "gcc" "CMakeFiles/HellRain.dir/actions.cpp.obj.d"
-  "D:/C++ Programs/Console Projects/Hellrain!Copy/deathaction.cpp" "CMakeFiles/HellRain.dir/deathaction.cpp.obj" "gcc" "CMakeFiles/HellRain.dir/deathaction.cpp.obj.d"
-  "D:/C++ Programs/Console Projects/Hellrain!Copy/main.cpp" "CMakeFiles/HellRain.dir/main.cpp.obj" "gcc" "CMakeFiles/HellRain.dir/main.cpp.obj.d"
+  "D:/C++ Programs/Console Projects/Hellrain!/actions.cpp" "CMakeFiles/HellRain.dir/actions.cpp.obj" "gcc" "CMakeFiles/HellRain.dir/actions.cpp.obj.d"
+  "D:/C++ Programs/Console Projects/Hellrain!/deathaction.cpp" "CMakeFiles/HellRain.dir/deathaction.cpp.obj" "gcc" "CMakeFiles/HellRain.dir/deathaction.cpp.obj.d"
+  "D:/C++ Programs/Console Projects/Hellrain!/items.cpp" "CMakeFiles/HellRain.dir/items.cpp.obj" "gcc" "CMakeFiles/HellRain.dir/items.cpp.obj.d"
+  "D:/C++ Programs/Console Projects/Hellrain!/main.cpp" "CMakeFiles/HellRain.dir/main.cpp.obj" "gcc" "CMakeFiles/HellRain.dir/main.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

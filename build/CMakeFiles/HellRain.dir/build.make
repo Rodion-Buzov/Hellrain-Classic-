@@ -53,10 +53,10 @@ RM = "C:/Program Files/CMake/bin/cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "D:/C++ Programs/Console Projects/Hellrain!Copy"
+CMAKE_SOURCE_DIR = "D:/C++ Programs/Console Projects/Hellrain!"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "D:/C++ Programs/Console Projects/Hellrain!Copy/build"
+CMAKE_BINARY_DIR = "D:/C++ Programs/Console Projects/Hellrain!/build"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/HellRain.dir/depend.make
@@ -70,52 +70,67 @@ include CMakeFiles/HellRain.dir/progress.make
 include CMakeFiles/HellRain.dir/flags.make
 
 CMakeFiles/HellRain.dir/main.cpp.obj: CMakeFiles/HellRain.dir/flags.make
-CMakeFiles/HellRain.dir/main.cpp.obj: D:/C++\ Programs/Console\ Projects/Hellrain!Copy/main.cpp
+CMakeFiles/HellRain.dir/main.cpp.obj: D:/C++\ Programs/Console\ Projects/Hellrain!/main.cpp
 CMakeFiles/HellRain.dir/main.cpp.obj: CMakeFiles/HellRain.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:/C++ Programs/Console Projects/Hellrain!Copy/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/HellRain.dir/main.cpp.obj"
-	C:/w64devkit/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HellRain.dir/main.cpp.obj -MF CMakeFiles/HellRain.dir/main.cpp.obj.d -o CMakeFiles/HellRain.dir/main.cpp.obj -c "D:/C++ Programs/Console Projects/Hellrain!Copy/main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:/C++ Programs/Console Projects/Hellrain!/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/HellRain.dir/main.cpp.obj"
+	C:/w64devkit/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HellRain.dir/main.cpp.obj -MF CMakeFiles/HellRain.dir/main.cpp.obj.d -o CMakeFiles/HellRain.dir/main.cpp.obj -c "D:/C++ Programs/Console Projects/Hellrain!/main.cpp"
 
 CMakeFiles/HellRain.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HellRain.dir/main.cpp.i"
-	C:/w64devkit/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:/C++ Programs/Console Projects/Hellrain!Copy/main.cpp" > CMakeFiles/HellRain.dir/main.cpp.i
+	C:/w64devkit/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:/C++ Programs/Console Projects/Hellrain!/main.cpp" > CMakeFiles/HellRain.dir/main.cpp.i
 
 CMakeFiles/HellRain.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HellRain.dir/main.cpp.s"
-	C:/w64devkit/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:/C++ Programs/Console Projects/Hellrain!Copy/main.cpp" -o CMakeFiles/HellRain.dir/main.cpp.s
+	C:/w64devkit/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:/C++ Programs/Console Projects/Hellrain!/main.cpp" -o CMakeFiles/HellRain.dir/main.cpp.s
 
 CMakeFiles/HellRain.dir/actions.cpp.obj: CMakeFiles/HellRain.dir/flags.make
-CMakeFiles/HellRain.dir/actions.cpp.obj: D:/C++\ Programs/Console\ Projects/Hellrain!Copy/actions.cpp
+CMakeFiles/HellRain.dir/actions.cpp.obj: D:/C++\ Programs/Console\ Projects/Hellrain!/actions.cpp
 CMakeFiles/HellRain.dir/actions.cpp.obj: CMakeFiles/HellRain.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:/C++ Programs/Console Projects/Hellrain!Copy/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/HellRain.dir/actions.cpp.obj"
-	C:/w64devkit/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HellRain.dir/actions.cpp.obj -MF CMakeFiles/HellRain.dir/actions.cpp.obj.d -o CMakeFiles/HellRain.dir/actions.cpp.obj -c "D:/C++ Programs/Console Projects/Hellrain!Copy/actions.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:/C++ Programs/Console Projects/Hellrain!/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/HellRain.dir/actions.cpp.obj"
+	C:/w64devkit/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HellRain.dir/actions.cpp.obj -MF CMakeFiles/HellRain.dir/actions.cpp.obj.d -o CMakeFiles/HellRain.dir/actions.cpp.obj -c "D:/C++ Programs/Console Projects/Hellrain!/actions.cpp"
 
 CMakeFiles/HellRain.dir/actions.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HellRain.dir/actions.cpp.i"
-	C:/w64devkit/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:/C++ Programs/Console Projects/Hellrain!Copy/actions.cpp" > CMakeFiles/HellRain.dir/actions.cpp.i
+	C:/w64devkit/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:/C++ Programs/Console Projects/Hellrain!/actions.cpp" > CMakeFiles/HellRain.dir/actions.cpp.i
 
 CMakeFiles/HellRain.dir/actions.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HellRain.dir/actions.cpp.s"
-	C:/w64devkit/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:/C++ Programs/Console Projects/Hellrain!Copy/actions.cpp" -o CMakeFiles/HellRain.dir/actions.cpp.s
+	C:/w64devkit/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:/C++ Programs/Console Projects/Hellrain!/actions.cpp" -o CMakeFiles/HellRain.dir/actions.cpp.s
 
 CMakeFiles/HellRain.dir/deathaction.cpp.obj: CMakeFiles/HellRain.dir/flags.make
-CMakeFiles/HellRain.dir/deathaction.cpp.obj: D:/C++\ Programs/Console\ Projects/Hellrain!Copy/deathaction.cpp
+CMakeFiles/HellRain.dir/deathaction.cpp.obj: D:/C++\ Programs/Console\ Projects/Hellrain!/deathaction.cpp
 CMakeFiles/HellRain.dir/deathaction.cpp.obj: CMakeFiles/HellRain.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:/C++ Programs/Console Projects/Hellrain!Copy/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/HellRain.dir/deathaction.cpp.obj"
-	C:/w64devkit/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HellRain.dir/deathaction.cpp.obj -MF CMakeFiles/HellRain.dir/deathaction.cpp.obj.d -o CMakeFiles/HellRain.dir/deathaction.cpp.obj -c "D:/C++ Programs/Console Projects/Hellrain!Copy/deathaction.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:/C++ Programs/Console Projects/Hellrain!/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/HellRain.dir/deathaction.cpp.obj"
+	C:/w64devkit/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HellRain.dir/deathaction.cpp.obj -MF CMakeFiles/HellRain.dir/deathaction.cpp.obj.d -o CMakeFiles/HellRain.dir/deathaction.cpp.obj -c "D:/C++ Programs/Console Projects/Hellrain!/deathaction.cpp"
 
 CMakeFiles/HellRain.dir/deathaction.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HellRain.dir/deathaction.cpp.i"
-	C:/w64devkit/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:/C++ Programs/Console Projects/Hellrain!Copy/deathaction.cpp" > CMakeFiles/HellRain.dir/deathaction.cpp.i
+	C:/w64devkit/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:/C++ Programs/Console Projects/Hellrain!/deathaction.cpp" > CMakeFiles/HellRain.dir/deathaction.cpp.i
 
 CMakeFiles/HellRain.dir/deathaction.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HellRain.dir/deathaction.cpp.s"
-	C:/w64devkit/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:/C++ Programs/Console Projects/Hellrain!Copy/deathaction.cpp" -o CMakeFiles/HellRain.dir/deathaction.cpp.s
+	C:/w64devkit/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:/C++ Programs/Console Projects/Hellrain!/deathaction.cpp" -o CMakeFiles/HellRain.dir/deathaction.cpp.s
+
+CMakeFiles/HellRain.dir/items.cpp.obj: CMakeFiles/HellRain.dir/flags.make
+CMakeFiles/HellRain.dir/items.cpp.obj: D:/C++\ Programs/Console\ Projects/Hellrain!/items.cpp
+CMakeFiles/HellRain.dir/items.cpp.obj: CMakeFiles/HellRain.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:/C++ Programs/Console Projects/Hellrain!/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/HellRain.dir/items.cpp.obj"
+	C:/w64devkit/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HellRain.dir/items.cpp.obj -MF CMakeFiles/HellRain.dir/items.cpp.obj.d -o CMakeFiles/HellRain.dir/items.cpp.obj -c "D:/C++ Programs/Console Projects/Hellrain!/items.cpp"
+
+CMakeFiles/HellRain.dir/items.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HellRain.dir/items.cpp.i"
+	C:/w64devkit/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:/C++ Programs/Console Projects/Hellrain!/items.cpp" > CMakeFiles/HellRain.dir/items.cpp.i
+
+CMakeFiles/HellRain.dir/items.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HellRain.dir/items.cpp.s"
+	C:/w64devkit/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:/C++ Programs/Console Projects/Hellrain!/items.cpp" -o CMakeFiles/HellRain.dir/items.cpp.s
 
 # Object files for target HellRain
 HellRain_OBJECTS = \
 "CMakeFiles/HellRain.dir/main.cpp.obj" \
 "CMakeFiles/HellRain.dir/actions.cpp.obj" \
-"CMakeFiles/HellRain.dir/deathaction.cpp.obj"
+"CMakeFiles/HellRain.dir/deathaction.cpp.obj" \
+"CMakeFiles/HellRain.dir/items.cpp.obj"
 
 # External object files for target HellRain
 HellRain_EXTERNAL_OBJECTS =
@@ -123,10 +138,11 @@ HellRain_EXTERNAL_OBJECTS =
 HellRain.exe: CMakeFiles/HellRain.dir/main.cpp.obj
 HellRain.exe: CMakeFiles/HellRain.dir/actions.cpp.obj
 HellRain.exe: CMakeFiles/HellRain.dir/deathaction.cpp.obj
+HellRain.exe: CMakeFiles/HellRain.dir/items.cpp.obj
 HellRain.exe: CMakeFiles/HellRain.dir/build.make
 HellRain.exe: CMakeFiles/HellRain.dir/linkLibs.rsp
 HellRain.exe: CMakeFiles/HellRain.dir/objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="D:/C++ Programs/Console Projects/Hellrain!Copy/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable HellRain.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="D:/C++ Programs/Console Projects/Hellrain!/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable HellRain.exe"
 	"C:/Program Files/CMake/bin/cmake.exe" -E rm -f CMakeFiles/HellRain.dir/objects.a
 	C:/w64devkit/bin/ar.exe qc CMakeFiles/HellRain.dir/objects.a @CMakeFiles/HellRain.dir/objects1.rsp
 	C:/w64devkit/bin/g++.exe -g -Wl,--whole-archive CMakeFiles/HellRain.dir/objects.a -Wl,--no-whole-archive -o HellRain.exe -Wl,--out-implib,libHellRain.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/HellRain.dir/linkLibs.rsp
@@ -140,6 +156,6 @@ CMakeFiles/HellRain.dir/clean:
 .PHONY : CMakeFiles/HellRain.dir/clean
 
 CMakeFiles/HellRain.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "D:/C++ Programs/Console Projects/Hellrain!Copy" "D:/C++ Programs/Console Projects/Hellrain!Copy" "D:/C++ Programs/Console Projects/Hellrain!Copy/build" "D:/C++ Programs/Console Projects/Hellrain!Copy/build" "D:/C++ Programs/Console Projects/Hellrain!Copy/build/CMakeFiles/HellRain.dir/DependInfo.cmake" "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "D:/C++ Programs/Console Projects/Hellrain!" "D:/C++ Programs/Console Projects/Hellrain!" "D:/C++ Programs/Console Projects/Hellrain!/build" "D:/C++ Programs/Console Projects/Hellrain!/build" "D:/C++ Programs/Console Projects/Hellrain!/build/CMakeFiles/HellRain.dir/DependInfo.cmake" "--color=$(COLOR)"
 .PHONY : CMakeFiles/HellRain.dir/depend
 

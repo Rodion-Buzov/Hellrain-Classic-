@@ -47,7 +47,8 @@ int main() {
         cout << "(1) Start Game" << endl;
         cout << "(2) View Score" << endl;
         cout << "(3) Credits" << endl;
-        cout << "(4) exit" << endl; 
+        cout << "(4) Backpack" << endl;
+        cout << "(5) exit" << endl; 
         cin >> ChoiceGame;
 
         if (ChoiceGame == 1) {
@@ -59,11 +60,13 @@ int main() {
             if (choiceGame2 == 1) {
                 cout << "HellRain!" << " Your task is to destroy the tower, for this you have 3 characters..." << endl;
                 cout << "Warrior, Wizard and Healer!" << endl;
+                cout << "And Items!" << endl;
                 cout << "Good luck!" << endl;
                 Tower tower;
                 Warrior warrior;
                 Wizard wizard;
                 Healer healer;
+                Potions potion;
                 int step = 0;
 
                 while (true) {
@@ -71,10 +74,11 @@ int main() {
                     cout << "Step: " << step << endl;
                     cout << "Your step: " << endl;
 
-                    cout << "Choice character for action: " << endl;
+                    cout << "Choice character or item for action: " << endl;
                     cout << "(1) Warrior" << endl;
                     cout << "(2) Wizard" << endl;
                     cout << "(3) Healer" << endl;
+                    cout << "(4) Items" << endl;
                     cin >> choiceCharacter;
 
                     if (choiceCharacter == 1) {
@@ -186,6 +190,31 @@ int main() {
                             break;
                         }
                     }
+                    else if (choiceCharacter == 4) {
+                        unsigned int ChoiceItems;
+
+                        cout << "Choice items: " << endl;
+                        cout << "(1) Bomb." << endl;
+                        cout << "(2) Heal potion." << endl;
+                        cin >> ChoiceItems;
+
+                        switch (ChoiceItems)
+                        {
+                        case 1:
+                            Bomb(tower);
+
+                            if (tower.TowerHealth <= 0) { // if kill tower
+                                Score += 1000;
+                                cout << "Your score: " << Score << endl;
+                                TowerDeathStep(tower, warrior, wizard, healer);
+                                break;
+                            }
+                        case 2:
+                            HealthPotion(potion, warrior, wizard, healer);
+                        default:
+                            cout << "Wrong Input! Error code 4!" << endl;
+                        }
+                    }
                     else {
                         cout << "Wrong Input! Error code 4!" << endl;
                     }
@@ -205,6 +234,11 @@ int main() {
             cout << "prod. by Rodion Buzov (*_*)" << endl;     
         }
         else if (ChoiceGame == 4) {
+            cout << "Items: " << endl;
+            cout << "3 bombs." << endl;
+            cout << "4 heal potions." << endl;
+        }
+        else if (ChoiceGame == 5) {
             break;
         }
         else {
