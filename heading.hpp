@@ -29,6 +29,7 @@ class Wizard : public Character { // Wizard
 public: 
     int WizardHealth = 300; // Wizard health
     int WizardDamage = 300; // Damage per hit
+    int WizardMana = 5; // Mana for spells
 
     void death() override { // death func
         cout << "Wizard has been destroyed!" << endl; // death function 
@@ -63,7 +64,8 @@ public:
 
 class Potions {
 public:
-    unsigned int NumsOfPotions = 4; // Number of potions in inventory
+    unsigned int NumsOfHealPotions = 3; // Number of heal potions in inventory
+    unsigned int NumsOfManaPotions = 3; // Number of mana potions in inventory
 };
 
 void WarriorAction(Tower& tower, Warrior& warrior, Wizard& wizard, Healer& healer);
@@ -78,3 +80,4 @@ void TowerDeathStep(Tower& tower, Warrior& warrior, Wizard& wizard, Healer& heal
 
 void HealthPotion(Potions& potion, Warrior& warrior, Wizard& wizard, Healer& healer);
 void Bomb(Tower& tower);
+void ManaPotion(Wizard& wizard, Potions& potion);

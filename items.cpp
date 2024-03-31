@@ -3,7 +3,7 @@
 void HealthPotion(Potions& potion, Warrior& warrior, Wizard& wizard, Healer& healer) {
     unsigned int ChoiceCharacterForHeal;
 
-    if (potion.NumsOfPotions > 0) {
+    if (potion.NumsOfHealPotions > 0) {
         cout << "==========";
         cout << "Choose a character to treat: " << endl; // choice character fo heal
         cout << "(1) Warrior" << endl;
@@ -18,7 +18,7 @@ void HealthPotion(Potions& potion, Warrior& warrior, Wizard& wizard, Healer& hea
                 cout << "Treatment of Warrior..." << endl; // Warrior heal
                 warrior.WarriorHealth += 100;
                 cout << "Warrior health: " << warrior.WarriorHealth << endl;
-                --potion.NumsOfPotions;
+                --potion.NumsOfHealPotions;
             }
             else if (warrior.WarriorHealth <= 0) {
                 cout << "Not treatment fo death characters" << endl;
@@ -32,7 +32,7 @@ void HealthPotion(Potions& potion, Warrior& warrior, Wizard& wizard, Healer& hea
                 cout << "Treatment of Wizard..." << endl; // Wizard heal 
                 wizard.WizardHealth += 100;
                 cout << "Wizard health: " << wizard.WizardHealth << endl;
-                --potion.NumsOfPotions;
+                --potion.NumsOfHealPotions;
             }
             else if (wizard.WizardHealth <= 0) {
                 cout << "Not treatment fo death characters" << endl;
@@ -46,7 +46,7 @@ void HealthPotion(Potions& potion, Warrior& warrior, Wizard& wizard, Healer& hea
                 cout << "Treatment of Healer..." << endl; // Healer heal
                 healer.HealerHealth += 100;
                 cout << "Healer health: " << healer.HealerHealth << endl;
-                --potion.NumsOfPotions;
+                --potion.NumsOfHealPotions;
             }
             else if (healer.HealerHealth <= 0) {
                 cout << "Not treatment fo death characters" << endl;
@@ -93,5 +93,15 @@ void Bomb(Tower& tower) {
     }
     else {
         cout << "We're out of bombs!" << endl;
+    }
+}
+
+void ManaPotion(Wizard& wizard, Potions& potion) {
+    if (potion.NumsOfManaPotions > 0) {
+        wizard.WizardMana += 3;
+        cout << "You feel a rush of mana! Mana +3" << endl;
+    }
+    else {
+        cout << "No more mana potions!"  << endl;
     }
 }

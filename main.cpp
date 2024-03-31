@@ -119,13 +119,19 @@ int main() {
                         }
                     }
                     else if (choiceCharacter == 2) {
-                        WizardAction(tower, warrior, wizard, healer);
-                        Score = Score += 10;
-                        cout << "Your score: " << Score << endl;
-                        cout << "Wizard health: " << wizard.WizardHealth << endl;
-                        cout << "Tower health: " << tower.TowerHealth << endl;
-
-                        TowerAction(tower, warrior, wizard, healer);
+                        if (wizard.WizardMana > 0) {
+                            WizardAction(tower, warrior, wizard, healer);
+                            --wizard.WizardMana;
+                            Score = Score += 10;
+                            cout << "Your score: " << Score << endl;
+                            cout << "Wizard health: " << wizard.WizardHealth << endl;
+                            cout << "Tower health: " << tower.TowerHealth << endl;
+                            TowerAction(tower, warrior, wizard, healer);
+                        }
+                        else {
+                            cout << "You don't have enough mana!" << endl;
+                            TowerAction(tower, warrior, wizard, healer);
+                        }
 
                         if (warrior.WarriorHealth <= 0) {
                             Score -= 50;
@@ -196,6 +202,7 @@ int main() {
                         cout << "Choice items: " << endl;
                         cout << "(1) Bomb." << endl;
                         cout << "(2) Heal potion." << endl;
+                        cout << "(3) Mana potion" << endl;
                         cin >> ChoiceItems;
 
                         switch (ChoiceItems)
@@ -211,6 +218,8 @@ int main() {
                             }
                         case 2:
                             HealthPotion(potion, warrior, wizard, healer);
+                        case 3:
+                            ManaPotion(wizard, potion);
                         default:
                             cout << "Wrong Input! Error code 4!" << endl;
                         }
@@ -236,7 +245,8 @@ int main() {
         else if (ChoiceGame == 4) {
             cout << "Items: " << endl;
             cout << "3 bombs." << endl;
-            cout << "4 heal potions." << endl;
+            cout << "3 heal potions." << endl;
+            cout << "3 mana potions." << endl;
         }
         else if (ChoiceGame == 5) {
             break;
