@@ -32,7 +32,7 @@ void HealerAction(Tower& tower, Warrior& warrior, Wizard& wizard, Healer& healer
     srand(time(NULL));
     RandomHeal = rand() % 2;
 
-    cout << "==========";
+    cout << "==========" << endl;
     cout << "Choose a character to treat: " << endl; // choice character fo heal
     cout << "(1) Warrior" << endl;
     cout << "(2) Wizard" << endl; 

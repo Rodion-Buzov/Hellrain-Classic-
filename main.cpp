@@ -218,10 +218,14 @@ int main() {
                                 TowerDeathStep(tower, warrior, wizard, healer);
                                 break;
                             }
+
+                            continue;
                         case 2:
                             HealthPotion(potion, warrior, wizard, healer);
+                            continue;
                         case 3:
                             ManaPotion(wizard, potion);
+                            continue;
                         case 4:
                             HardcoreTotem(tower, warrior, wizard, healer, potion);
                             Score += 2000;
@@ -246,9 +250,11 @@ int main() {
                                 HealerDeathStep(tower, warrior, wizard, healer);
                                 break;
                             }
-
+                            
+                            continue;
                         default:
                             cout << "Wrong Input! Error code 4!" << endl;
+                            continue;
                         }
                     }
                     else {

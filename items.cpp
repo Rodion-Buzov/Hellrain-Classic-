@@ -4,7 +4,7 @@ void HealthPotion(Potions& potion, Warrior& warrior, Wizard& wizard, Healer& hea
     unsigned int ChoiceCharacterForHeal;
 
     if (potion.NumsOfHealPotions > 0) {
-        cout << "==========";
+        cout << "=========="  << endl;
         cout << "Choose a character to treat: " << endl; // choice character fo heal
         cout << "(1) Warrior" << endl;
         cout << "(2) Wizard" << endl; 
