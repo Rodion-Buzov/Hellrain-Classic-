@@ -110,14 +110,18 @@ void HardcoreTotem(Tower& tower, Warrior& warrior, Wizard& wizard, Healer& heale
     if (tower.NumOfTotems > 0) {
         cout << "Your game has become more difficult!" << endl;
         cout << "The Tower has noticeably improved its health! + 1000" << endl;
-        cout << "Your characters have become weaker! -100 All" << endl;
+        cout << "Your characters have become weaker! -100 All Health, -100 warrior's and wizard's Damage" << endl;
         cout << "You have lost some items from your backpack... -1 All" << endl;
         cout << "But your reward has increased! + 2000 Score" << endl;
 
         tower.TowerHealth += 1000;
+
         warrior.WarriorHealth -= 100;
         wizard.WizardHealth -= 100;
         healer.HealerHealth -= 100;
+
+        warrior.WarriorDamage -= 100;
+        wizard.WizardDamage -= 100;
 
         tower.NumOfBombs -= 1;
         potion.NumsOfHealPotions -= 1;

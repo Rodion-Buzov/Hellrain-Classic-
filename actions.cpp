@@ -30,7 +30,7 @@ void HealerAction(Tower& tower, Warrior& warrior, Wizard& wizard, Healer& healer
     int ChoiceHeal; // choice character fo heal
     int RandomHeal; // lucky heal 
     srand(time(NULL));
-    RandomHeal = rand() % 2;
+    RandomHeal = rand() % 3;
 
     cout << "==========" << endl;
     cout << "Choose a character to treat: " << endl; // choice character fo heal
@@ -60,7 +60,7 @@ void HealerAction(Tower& tower, Warrior& warrior, Wizard& wizard, Healer& healer
         }
     }
     else if (ChoiceHeal == 2) {
-        if (RandomHeal == 1) {
+        if (RandomHeal == 0) {
             if (wizard.WizardHealth > 0) {
                 cout << "Treatment of Wizard..." << endl; // Wizard heal 
                 wizard.WizardHealth += healer.HealerHeal;
@@ -78,7 +78,7 @@ void HealerAction(Tower& tower, Warrior& warrior, Wizard& wizard, Healer& healer
         }
     }
     else if (ChoiceHeal == 3) {
-        if (RandomHeal == 2) {
+        if (RandomHeal == 0) {
             if (healer.HealerHealth > 0) {
                 cout << "self-medication..." << endl; // self-medication
                 healer.HealerHealth += healer.HealerHeal;

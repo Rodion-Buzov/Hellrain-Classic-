@@ -18,7 +18,7 @@ public:
 class Warrior : public Character { // Warrior 
 public: 
     int WarriorHealth = 600; // Warrior health
-    int WarriorDamage = 100; // Damage per hit
+    int WarriorDamage = 200; // Damage per hit
     
     void death() override {
         cout << "Warrior has been destroyed!" << endl; // death function
@@ -29,7 +29,7 @@ public:
 class Wizard : public Character { // Wizard 
 public: 
     int WizardHealth = 300; // Wizard health
-    int WizardDamage = 300; // Damage per hit
+    int WizardDamage = 400; // Damage per hit
     int WizardMana = 5; // Mana for spells
 
     void death() override { // death func
@@ -40,7 +40,7 @@ public:
 
 class Healer : public Character { // Healer, no attack, only heal
 public: 
-    int HealerHealth = 200; // Health
+    int HealerHealth = 300; // Health
     int HealerHeal = 100; // heal
 
     void death() override {
@@ -55,7 +55,7 @@ public:
     int TowerDamage = 100;   // Damage per hit
 
     unsigned int NumOfBombs = 3; // bombs 
-    unsigned int NumOfTotems = 3; // totems
+    unsigned int NumOfTotems = 1; // totems
 
     // TowerDeath function: A function that gets called when the tower's health reaches 0 or below.
     void death() override {
