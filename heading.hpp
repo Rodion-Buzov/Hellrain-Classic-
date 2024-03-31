@@ -1,12 +1,13 @@
 #pragma once
-#include <iostream>
+
+#include <iostream> // libraries
 #include <string>
 #include <random>
 #include <time.h>
 #include <fstream>
 using namespace std;
 
-void AddScore();
+void AddScore(); // functions
 void ViewScore();
 
 class Character { // virtual class
@@ -53,7 +54,8 @@ public:
     int TowerHealth = 3000; // Tower health
     int TowerDamage = 100;   // Damage per hit
 
-    unsigned int NumOfBombs = 3;
+    unsigned int NumOfBombs = 3; // bombs 
+    unsigned int NumOfTotems = 3; // totems
 
     // TowerDeath function: A function that gets called when the tower's health reaches 0 or below.
     void death() override {
@@ -68,7 +70,7 @@ public:
     unsigned int NumsOfManaPotions = 3; // Number of mana potions in inventory
 };
 
-void WarriorAction(Tower& tower, Warrior& warrior, Wizard& wizard, Healer& healer);
+void WarriorAction(Tower& tower, Warrior& warrior, Wizard& wizard, Healer& healer); // functions
 void WizardAction(Tower& tower, Warrior& warrior, Wizard& wizard, Healer& healer);
 void HealerAction(Tower& tower, Warrior& warrior, Wizard& wizard, Healer& healer);
 void TowerAction(Tower& tower, Warrior& warrior, Wizard& wizard, Healer& healer);
@@ -81,3 +83,4 @@ void TowerDeathStep(Tower& tower, Warrior& warrior, Wizard& wizard, Healer& heal
 void HealthPotion(Potions& potion, Warrior& warrior, Wizard& wizard, Healer& healer);
 void Bomb(Tower& tower);
 void ManaPotion(Wizard& wizard, Potions& potion);
+void HardcoreTotem(Tower& tower, Warrior& warrior, Wizard& wizard, Healer& healer, Potions& potion);

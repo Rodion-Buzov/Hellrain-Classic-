@@ -202,7 +202,9 @@ int main() {
                         cout << "Choice items: " << endl;
                         cout << "(1) Bomb." << endl;
                         cout << "(2) Heal potion." << endl;
-                        cout << "(3) Mana potion" << endl;
+                        cout << "(3) Mana potion." << endl;
+                        cout << "We do not recommend it for the first pass! But you can try..." << endl;
+                        cout << "(4) Hardcore Totem." << endl;
                         cin >> ChoiceItems;
 
                         switch (ChoiceItems)
@@ -220,6 +222,31 @@ int main() {
                             HealthPotion(potion, warrior, wizard, healer);
                         case 3:
                             ManaPotion(wizard, potion);
+                        case 4:
+                            HardcoreTotem(tower, warrior, wizard, healer, potion);
+                            Score += 2000;
+
+                            if (warrior.WarriorHealth <= 0) {
+                                Score -= 50;
+                                cout << "Your score: " << Score << endl;
+                                WarriorDeathStep(tower, warrior, wizard, healer);
+                                break;
+                            }
+
+                            if (wizard.WizardHealth <= 0) {
+                                Score -= 30;
+                                cout << "Your score: " << Score << endl;
+                                WizardDeathStep(tower, warrior, wizard, healer);
+                                break;
+                            }
+
+                            if (healer.HealerHealth <= 0) {
+                                Score -= 30;
+                                cout << "Your score: " << Score << endl;
+                                HealerDeathStep(tower, warrior, wizard, healer);
+                                break;
+                            }
+
                         default:
                             cout << "Wrong Input! Error code 4!" << endl;
                         }
@@ -247,6 +274,7 @@ int main() {
             cout << "3 bombs." << endl;
             cout << "3 heal potions." << endl;
             cout << "3 mana potions." << endl;
+            cout << "1 Hardcore Totem." << endl;
         }
         else if (ChoiceGame == 5) {
             break;

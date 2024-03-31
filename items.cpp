@@ -105,3 +105,28 @@ void ManaPotion(Wizard& wizard, Potions& potion) {
         cout << "No more mana potions!"  << endl;
     }
 }
+
+void HardcoreTotem(Tower& tower, Warrior& warrior, Wizard& wizard, Healer& healer, Potions& potion) {
+    if (tower.NumOfTotems > 0) {
+        cout << "Your game has become more difficult!" << endl;
+        cout << "The Tower has noticeably improved its health! + 1000" << endl;
+        cout << "Your characters have become weaker! -100 All" << endl;
+        cout << "You have lost some items from your backpack... -1 All" << endl;
+        cout << "But your reward has increased! + 2000 Score" << endl;
+
+        tower.TowerHealth += 1000;
+        warrior.WarriorHealth -= 100;
+        wizard.WizardHealth -= 100;
+        healer.HealerHealth -= 100;
+
+        tower.NumOfBombs -= 1;
+        potion.NumsOfHealPotions -= 1;
+        potion.NumsOfManaPotions -= 1;
+
+        cout << "Good Luck!" << endl;
+        system("pause");
+    }
+    else {
+        cout << "You  don't have any Totems left." << endl;
+    }
+}
